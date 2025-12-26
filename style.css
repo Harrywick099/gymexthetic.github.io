@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #eaeaea;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(6px);
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #f5c16c;
+}
+
+header nav a {
+  color: #eaeaea;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+header nav a:hover {
+  color: #f5c16c;
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  background:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 17px;
+  color: #cfcfcf;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 36px;
+  background: linear-gradient(135deg, #f5c16c, #d4a24c);
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #f5c16c;
+}
+
+section p {
+  max-width: 700px;
+  margin: auto;
+  color: #cccccc;
+}
+
+/* PROGRAMS */
+.service-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: #141414;
+  width: 280px;
+  margin: 15px;
+  padding: 30px 20px;
+  border-radius: 14px;
+  border: 1px solid #222;
+}
+
+.card h3 {
+  color: #f5c16c;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+}
+
+/* CONTACT */
+.whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  background: #000;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #888;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+}
